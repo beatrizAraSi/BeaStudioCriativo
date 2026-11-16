@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Veja as fotos dos produtos da Bea Studio Criativo.">
+  <title>Fotos do produto | Bea Studio Criativo</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/produtos-dados.js" defer></script>
+  <script src="js/produto.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <a class="brand" href="index.html" aria-label="Bea Studio Criativo, início">
+        <img class="brand-logo" src="img/Logo.jpg" alt="">
+        <span class="brand-small">BEA STUDIO CRIATIVO</span>
+      </a>
+      <nav class="navigation" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="index.html#catalogo">Personalizados</a>
+        <a href="artes-prontas.html">Produtos</a>
+      </nav>
+      <a class="header-cta" href="https://wa.me/?text=Oi%2C%20Bea!%20Vim%20ver%20os%20produtos." target="_blank" rel="noopener noreferrer">
+        Chamar no WhatsApp <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+    <main>
+      <section class="ready-products ready-gallery product-photo-page" aria-labelledby="product-title">
+        <a class="button product-back" href="artes-prontas.html"><span aria-hidden="true">←</span> Voltar aos produtos</a>
+        <p class="eyebrow">Fotos do produto</p>
+        <h1 id="product-title">Produto não encontrado</h1>
+        <p class="product-photos-message" id="product-message">Não foi possível encontrar este produto.</p>
+        <div class="product-photos" id="product-photos"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="brand footer-brand" href="index.html"><img class="brand-logo" src="img/Logo.jpg" alt="Bea Studio Criativo logo"></a>
+      <p>© 2026 Bea. Studio Criativo</p>
+    </footer>
+  </div>
+  <dialog class="photo-lightbox" id="photo-lightbox" aria-labelledby="photo-lightbox-title">
+    <div class="photo-lightbox-header">
+      <h2 id="photo-lightbox-title">Foto ampliada</h2>
+      <button class="photo-lightbox-close" type="button" aria-label="Fechar foto ampliada">×</button>
+    </div>
+    <div class="photo-lightbox-frame">
+      <img id="photo-lightbox-image" alt="">
+    </div>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore as categorias de produtos da Bea Studio Criativo.">
+  <title>Produtos | Bea Studio Criativo</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/galeria-produtos.js" defer></script>
+  <script src="js/produtos-dados.js" defer></script>
+  <script src="js/categoria-artes.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <a class="brand" href="index.html" aria-label="Bea Studio Criativo, início">
+        <img class="brand-logo" src="img/Logo.jpg" alt="">
+        <span class="brand-small">BEA STUDIO CRIATIVO</span>
+      </a>
+      <nav class="navigation" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="index.html#catalogo">Personalizados</a>
+        <a href="artes-prontas.html">Produtos</a>
+      </nav>
+      <a class="header-cta" href="https://wa.me/?text=Oi%2C%20Bea!%20Vim%20ver%20os%20produtos." target="_blank" rel="noopener noreferrer">
+        Chamar no WhatsApp <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+    <main>
+      <section class="ready-products ready-gallery" aria-labelledby="category-title">
+        <p class="eyebrow">Produtos</p>
+        <h1 id="category-title">Categoria não encontrada</h1>
+        <nav class="ready-categories" aria-label="Categorias de produtos">
+          <a href="categoria-artes.html?categoria=redondos" data-category="redondos">Bottons redondos</a>
+          <a href="categoria-artes.html?categoria=coracao" data-category="coracao">Bottons coração</a>
+          <a href="categoria-artes.html?categoria=retangular" data-category="retangular">Bottons retangulares</a>
+          <a href="categoria-artes.html?categoria=stickers" data-category="stickers">Stickers</a>
+        </nav>
+        <p class="ready-category-empty" id="category-message">Escolha uma categoria acima para continuar.</p>
+        <div class="ready-product-grid" id="category-products"></div>
+        <a class="button ready-category-back" href="artes-prontas.html">Voltar aos produtos <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="brand footer-brand" href="index.html"><img class="brand-logo" src="img/Logo.jpg" alt="Bea Studio Criativo logo"></a>
+      <p>© 2026 Bea. Studio Criativo</p>
+    </footer>
+  </div>
+</body>
+</html>

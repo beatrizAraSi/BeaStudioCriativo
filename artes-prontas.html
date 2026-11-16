@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Confira os produtos da Bea Studio Criativo e seus preços individuais.">
+  <title>Produtos | Bea Studio Criativo</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/galeria-produtos.js" defer></script>
+  <script src="js/produtos-dados.js" defer></script>
+  <script src="js/produtos-main.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <a class="brand" href="index.html" aria-label="Bea Studio Criativo, início">
+        <img class="brand-logo" src="img/Logo.jpg" alt="">
+        <span class="brand-small">BEA STUDIO CRIATIVO</span>
+      </a>
+      <nav class="navigation" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="index.html#catalogo">Personalizados</a>
+        <a href="#artes-prontas">Produtos</a>
+      </nav>
+      <a class="header-cta" href="https://wa.me/?text=Oi%2C%20Bea!%20Vim%20ver%20os%20produtos." target="_blank" rel="noopener noreferrer">
+        Chamar no WhatsApp <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="ready-products ready-gallery" id="artes-prontas" aria-labelledby="ready-gallery-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Peças com artes prontas</p>
+            <h1 id="ready-gallery-title">Escolha a sua favorita!</h1>
+          </div>
+          <p>Estas peças têm artes definidas e preço individual. Para criar uma arte personalizada, acesse a opção de personalizados.</p>
+        </div>
+        <nav class="ready-categories" aria-label="Categorias de produtos" id="filter-nav">
+          <button class="category-filter active" data-category="todos">Todos</button>
+          <button class="category-filter" data-category="redondos">Bottons redondos</button>
+          <button class="category-filter" data-category="coracao">Bottons coração</button>
+          <button class="category-filter" data-category="retangular">Bottons retangulares</button>
+          <button class="category-filter" data-category="stickers">Stickers</button>
+        </nav>
+        <p class="ready-gallery-note">Substitua as imagens, os nomes, as descrições e “R$ --,--” pelos dados de cada produto.</p>
+
+        <div class="ready-product-grid" id="all-products"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand footer-brand" href="index.html"><img class="brand-logo" src="img/Logo.jpg" alt="Bea Studio Criativo logo"></a>
+      <p>© 2026 Bea. Studio Criativo</p>
+    </footer>
+    
+    <!-- Modal de Detalhes do Produto -->
+    <div class="modal modal-details" id="detailsModal">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fechar">×</button>
+        <div class="modal-header">
+          <h2 id="detailsTitle">Produto</h2>
+        </div>
+        <div class="modal-body">
+          <div class="sizes-options" id="sizesContainer"></div>
+          <div class="quantity-section">
+            <label for="detailsQuantity">Quantidade:</label>
+            <div class="quantity-control">
+              <button id="decreaseDetails" class="qty-btn">−</button>
+              <input type="number" id="detailsQuantity" min="1" value="1">
+              <button id="increaseDetails" class="qty-btn">+</button>
+            </div>
+          </div>
+          <div class="summary">
+            <p>Valor por unidade: <strong id="detailsSubtotal">R$ 0,00</strong></p>
+            <p>Total: <strong id="detailsTotal" style="color: #c83f80; font-size: 18px;">R$ 0,00</strong></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn-cancel">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
